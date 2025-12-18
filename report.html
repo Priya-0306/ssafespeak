@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anonymous Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Submit Anonymous Report</h2>
+
+<form action="https://formspree.io/f/xwveerjn" method="POST">
+
+<input type="hidden" name="_redirect" value="https://mitra182004.github.io/safespeak/thankyou.html">
+
+  <!-- rest of your form -->
+
+  <label>Incident Type</label>
+  <select name="incident" required>
+    <option>Harassment</option>
+    <option>Bullying</option>
+    <option>Unsafe Incident</option>
+    <option>Misconduct</option>
+  </select>
+
+  <label>Description</label>
+  <textarea name="description" required></textarea>
+
+  <label>Severity</label>
+  <select name="severity">
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+  </select>
+
+  <button type="submit">Submit Securely</button>
+
+</form>
+
+<p>No personal data is collected.</p>
+
+</body>
+</html>
+
+
+
