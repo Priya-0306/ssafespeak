@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Submitted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Thank You!</h2>
+<p>Your report has been submitted successfully.</p>
+
+<h3>Your Anonymous Tracking ID</h3>
+<p id="trackingId" style="font-weight:bold; font-size:18px;"></p>
+
+<p>
+Please save this Tracking ID.  
+You can use it later to check the status of your report.
+</p>
+
+<p style="font-size:14px; color:gray;">
+For privacy reasons, no personal information is stored.
+</p>
+
+<a href="index.html" class="btn">Go Back to Home</a>
+
+<script>
+  // Generate random anonymous tracking ID
+  const trackingId = "SS-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+  document.getElementById("trackingId").innerText = trackingId;
+</script>
+
+</body>
+</html>
